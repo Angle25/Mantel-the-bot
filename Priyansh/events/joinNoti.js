@@ -31,7 +31,7 @@ module.exports.run = async function({ api, event }) {
         if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
                 api.changeNickname(`{ ${global.config.PREFIX} } × ${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
                 const fs = require("fs");
-                return api.sendMessage("Assalamu Alaikum Everyone🥀🥀", event.threadID, () => api.sendMessage({body:`🌺Shaan🦋🌺 CONNECTED«
+                return api.sendMessage("Assalamu Alaikum Everyone🥀🥀", event.threadID, () => api.sendMessage({body:`🌺Eman Mālik🦋🌺 CONNECTED«
 
 Bot Made By Syco Kɪng Legends☘️
 <------------------------------>  
@@ -59,7 +59,7 @@ https://www.instagram.com/shankhank345?igsh=MXVneXZ6bzR4bHhvcg==￼
 
 ☣️Email: yad Nahi Hai 😂
 
-⚠️Wp: Nahi de tha kisi ko`, attachment: fs.createReadStream(__dirname + "/cache/lv_7413647234832682256_20250105005634.mp4")} ,threadID));
+⚠️Wp: Nahi de tha kisi ko`, attachment: fs.createReadStream(__dirname + "/cache/botjoin.mp4")} ,threadID));
         }
         else {
                 try {
