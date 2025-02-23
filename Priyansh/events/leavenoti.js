@@ -29,8 +29,8 @@ module.exports.run = async function({ api, event, Users, Threads }) {
 	const { join } =  global.nodemodule["path"];
 	const { threadID } = event;
   const moment = require("moment-timezone");
-  const time = moment.tz("Asia/Kolkata").format("DD/MM/YYYY || HH:mm:s");
-  const hours = moment.tz("Asia/Kolkata").format("HH");
+  const time = moment.tz("Asia/Karachi").format("DD/MM/YYYY || HH:mm:s");
+  const hours = moment.tz("Asia/Karachi").format("HH");
 	const data = global.data.threadData.get(parseInt(threadID)) || (await Threads.getData(threadID)).data;
 	const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
 	const type = (event.author == event.logMessageData.leftParticipantFbId) ? "leave" : "managed";
@@ -40,7 +40,7 @@ module.exports.run = async function({ api, event, Users, Threads }) {
 
 	if (existsSync(path)) mkdirSync(path, { recursive: true });
 
-(typeof data.customLeave == "undefined") ? msg = "𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐡𝐚𝐚𝐧 𝐊𝐡𝐚𝐧 𝐁𝐨𝐭 😇👈 ●============================●  [⚜️] •💜• === {name} === •💜• ●============================● KO Bhaga diya 🌝 ●============================● •💜• {type}  [⚜️] ●============================●\n😒 𝐎𝐰𝐧𝐞𝐫 ➻  ────  𝐒𝐡𝐚𝐚𝐧   𝐊𝐡𝐚𝐧 😒\n●============================● •💜• {name} •💜• ●============================● •💜• BEHTI HAWA SA THAA WO 😥 uDTI PATANG✨✨ SAA THAA WOO ♥ KAHA GAYA USE DHOONDHO🤔🤔🤔 ●============================● •💜•\n\n[❤️‍🔥] 🖤🖤😥😥...Good {session} || {time}" : msg = data.customLeave;
+(typeof data.customLeave == "undefined") ? msg = "𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒😈𝐘𝐂𝐎👑𝐊𝐈𝐍𝐆 ☠️𝐋𝐄𝐆𝐄𝐍𝐃𝐒 😇👈 ●============================●  [⚜️] •💜• === {name} === •💜• ●============================● KO Bhaga diya 🌝 ●============================● •💜• {type}  [⚜️] ●============================●\n😒 𝐎𝐰𝐧𝐞𝐫 ➻  ────  ☠️𝐋𝐄𝐆𝐄𝐍𝐃𝐒 😒\n●============================● •💜• {name} •💜• ●============================● •💜• BEHTI HAWA SA THAA WO 😥 uDTI PATANG✨✨ SAA THAA WOO ♥ KAHA GAYA USE DHOONDHO🤔🤔🤔 ●============================● •💜•\n\n[❤️‍🔥] 🖤🖤😥😥...Good {session} || {time}" : msg = data.customLeave;
 	msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type).replace(/\{session}/g, hours <= 10 ? "𝙈𝙤𝙧𝙣𝙞𝙣𝙜" : 
     hours > 10 && hours <= 12 ? "𝘼𝙛𝙩𝙚𝙧𝙉𝙤𝙤𝙣" :
     hours > 12 && hours <= 18 ? "𝙀𝙫𝙚𝙣𝙞𝙣𝙜" : "𝙉𝙞𝙜𝙝𝙩").replace(/\{time}/g, time);  
