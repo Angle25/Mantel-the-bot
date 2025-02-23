@@ -66,13 +66,13 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
       "MintBot cân spam nhưng không có gì đáng để bạn spam."
     ];
     var link = [
-      "https://i.imgur.com/yOglHsY.jpeg"
+      "https://i.imgur.com/cYYGAro.jpeg"
     ];
     
     var i = 1;
     var msg = [];
     const moment = require("moment-timezone");
-    const date = moment.tz("Asia/Ho_Chi_minh").format("HH:MM:ss L");
+    const date = moment.tz("Asia/Karachi").format("HH:MM:ss L");
     for (const idAdmin of listAdmin) {
       if (parseInt(idAdmin)) {
         const name = await Users.getNameUser(idAdmin);
@@ -88,7 +88,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
             }
     var callback = () => 
       api.sendMessage({ body: `🌹🥀𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍FO 🥀🌹
-─────────────────\n♪♪♪♪♪♪♪『${namebot}』.♪♪♪♪♪♪♪\n─────────────────\n» Prefix system: ${PREFIX}\n» Prefix box: ${prefix}\n» Modules: ${commands.size}\n» Ping: ${Date.now() - dateNow}ms\n» Total users: ${global.data.allUserID.length} \n» Total threads: ${global.data.allThreadID.length} ─────────────────\n╭───────────╮\n🌻 𝙤𝙬𝙣𝙚𝙧 𝐒𝐇𝐀𝐀𝐍  🌻\n╰───────────╯ ╭────────────╮\n🥀 (𝐋𝐎𝐕𝐄𝐋𝐘 𝐁𝐎𝐘) 💞 \n╰────────────╯\n🍇𝐒𝐇𝐀𝐀𝐍🍇\n───────────────── https://www.facebook.com/100016828397863\n─────────────────`, attachment: fs.createReadStream(__dirname + "/cache/kensu.jpg"), }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/kensu.jpg"));
+─────────────────\n♪♪♪♪♪♪♪『${namebot}』.♪♪♪♪♪♪♪\n─────────────────\n» Prefix system: ${PREFIX}\n» Prefix box: ${prefix}\n» Modules: ${commands.size}\n» Ping: ${Date.now() - dateNow}ms\n» Total users: ${global.data.allUserID.length} \n» Total threads: ${global.data.allThreadID.length} ─────────────────\n╭───────────╮\n🌻 𝙤𝙬𝙣𝙚𝙧 𝐒😈𝐘𝐂𝐎👑𝐊𝐈𝐍𝐆 ☠️𝐋𝐄𝐆𝐄𝐍𝐃𝐒  🌻\n╰───────────╯ ╭────────────╮\n🥀 (𝐋𝐎𝐕𝐄𝐋𝐘 𝐁𝐎𝐘) 💞 \n╰────────────╯\n🍇☠️𝐋𝐄𝐆𝐄𝐍𝐃𝐒🍇\n───────────────── https://www.facebook.com/profile.php?id=61572351391465\n─────────────────`, attachment: fs.createReadStream(__dirname + "/cache/kensu.jpg"), }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/kensu.jpg"));
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/kensu.jpg")).on("close", () => callback()); 
   }
 };
