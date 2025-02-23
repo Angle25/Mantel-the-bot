@@ -71,14 +71,14 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
 
 
 
-      if ((event.body.toLowerCase() == "🤗") || (event.body.toLowerCase() == "🤗")) {
-       return api.sendMessage("yahan nahi Ib chalo ☺️", threadID);
+      if ((event.body.toLowerCase() == "AK syco") || (event.body.toLowerCase() == "Alisha")) {
+       return api.sendMessage("Boss ko na bhula hussa karthi hai", threadID);
      };
-    if ((event.body.toLowerCase() == "shaan") || (event.body.toLowerCase() == "shan")) {
+    if ((event.body.toLowerCase() == "Syco Kɪng Legends") || (event.body.toLowerCase() == "Eman Mālik")) {
        return api.sendMessage("Boss busy hai Mujse bat Karo 🙄", threadID);
      };
     if ((event.body.toLowerCase() == "janu") || (event.body.toLowerCase() == "jan")) {
-       return api.sendMessage("Janu me serf Shaan ki hu samjhy", threadID);
+       return api.sendMessage("Janu me serf Syco Kɪng Legends ki hu samjhy", threadID);
      };
    if ((event.body.toLowerCase() == "😂😂😂") || (event.body.toLowerCase() == "😁😁😁")) {
        return api.sendMessage("uff kya hass raha hai jese kisi ladki han bolo ho😂😂😂😂", threadID);
@@ -129,7 +129,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      };
         if ((event.body.toLowerCase() == "😿")) {return api.sendMessage(" Biliya kab se rone lagi ajeb hai😂😂🤣", threadID);
      };
-      if ((event.body.toLowerCase() == "ayesha")) {return api.sendMessage("bahot pyari Ladkı Hai Ayesha MashaAllah  💕💕❤️🤭 ", threadID);
+      if ((event.body.toLowerCase() == "Alisha")) {return api.sendMessage("bahot pyari Ladkı Hai Alisha MashaAllah  💕💕❤️🤭 ", threadID);
      };
                 if ((event.body.toLowerCase() == "😯")) {return api.sendMessage("mho me makhi gus jayegi yar band karo", threadID);
                };
@@ -192,7 +192,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      };
 
      if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "bot ka malik")) {
-       return api.sendMessage("༻𝐎𝐖𝐍𝐄𝐑:- ☞ ༻☞[𝐎𝐖𝐍𝐄𝐑:☞➸⃝🐼⃝⃞⃟𝙎𝙝𝙖𝙖𝙣 𝙠𝙝𝙖𝙣🎸  ☜ 𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 𝙎𝙝𝙖𝙖𝙣𝙞. ☜ ༺༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- https://www.facebook.com/𝙈𝙍.𝙎𝙃𝘼𝘼𝙉 345☞    his insta id @Shankhank345 ☜ ༺༒ ༒", threadID);
+       return api.sendMessage("༻𝐎𝐖𝐍𝐄𝐑:- ☞ ༻☞[𝐎𝐖𝐍𝐄𝐑:☞➸⃝🐼⃝⃞⃟𝐒😈𝐘𝐂𝐎👑𝐊𝐈𝐍𝐆 ☠️𝐋𝐄𝐆𝐄𝐍𝐃𝐒🎸  ☜ 𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 Syco Kɪng Legends. ☜ ༺༒ ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- https://www.facebook.com/profile.php?id=61572351391465☞    his insta id N/A ☜ ༺༒ ༒", threadID);
      };
 
      if ((event.body.toLowerCase() == "tera Malik kon hai") || (event.body.toLowerCase() == "is bot ka malik kon hai")) {
@@ -541,14 +541,14 @@ if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
   var msg = {
     body: `💞👉${name} 💞👈
 
-❖•S━━━━━💞━━━━━A•❖,
+❖•S━━━━━💞━━━━━E•❖,
 
 
 ${rand}                                        
 
-𝗖𝗿𝗲𝗱𝗶𝘁𝘀:𒁍≛⃝𝙎𝙝𝙖𝙖𝙣 𝙆𝙝𝙖𝙣 𝙆 ❥||ㅎ
+𝗖𝗿𝗲𝗱𝗶𝘁𝘀:𒁍≛⃝𝐒😈𝐘𝐂𝐎👑𝐊𝐈𝐍𝐆 ☠️𝐋𝐄𝐆𝐄𝐍𝐃𝐒 ❥||ㅎ
 
-❖•S━━━━━💞━━━━━A•❖`
+❖•S━━━━━💞━━━━━E•❖`
   }
   return api.sendMessage(msg, threadID, messageID);
 };
